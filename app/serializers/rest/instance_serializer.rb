@@ -86,6 +86,10 @@ class REST::InstanceSerializer < ActiveModel::Serializer
       message: registrations_enabled? ? nil : registrations_message,
     }
   end
+  
+  def max_toot_chars 
+   5500
+end
 
   private
 
